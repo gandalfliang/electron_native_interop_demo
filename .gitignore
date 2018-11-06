@@ -1,3 +1,10 @@
-
+CMakeFiles
+CMakeScripts
+Debug
+Release
+*.build
+*.xcodeproj
+*.cmake
+CMakeCache.txt
 node_modules
 
