@@ -14,8 +14,6 @@ var nativelib=ffi.Library('Electron_native',{
     'fireCallback':['void',['int','int']]
 });
 
-ffi.ForeignFunction()
-
 var callback=ffi.Callback('void',['int','int'],
 function(a,b){
     console.log("callback result:",a);
