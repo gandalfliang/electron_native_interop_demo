@@ -1,4 +1,7 @@
+#define MAX_API
+#if defined(WIN32)
 #define MAX_API __declspec(dllexport)
+#endif
 
 typedef void (*CallBack)(int a, int b);
 
