@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "rebuild": "cd ./node_modules/.bin && electron-rebuild --force --module-dir=../../ && cd ../ffi && node-gyp rebuild --target=3.0.8 --arch=x64 --dist-url=https://atom.io/download/electron --msvs-version=2017 --python=python2.7"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,11 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^3.0.8",
+    "electron-rebuild": "^1.8.2",
+    "ffi": "^2.2.0",
     "node-gyp": "^3.8.0"
+  },
+  "dependencies": {
+    "ref": "^1.3.5"
   }
 }
