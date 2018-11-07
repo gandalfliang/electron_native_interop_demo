@@ -8,7 +8,7 @@ function createWindow(){
 
 app.on('ready',createWindow)
 
-var nativelib=ffi.Library('Electron_native',{
+var nativelib=ffi.Library('native/build/Debug/nativelib.dll',{
     'add':['int',['int','int']],
     'setCallback':['bool',['pointer']],
     'fireCallback':['void',['int','int']]
